@@ -1,0 +1,7 @@
+:root {
+  --my-color:pink;
+}
+.world{
+  text-align: center;
+  color: var(--my-color);
+}
