@@ -8,5 +8,17 @@
 </head>
 <body>
   <div class="world">这里是一个css的新世界</div>
+  <div class="mystyle">
+    <div class="world">这里是第二个世界</div>
+  </div>
 </body>
+<script type="text/javascript">
+  // js访问以及动态修改css自定义属性
+  var rootElement = document.documentElement;
+  var styles = getComputedStyle(rootElement);
+  var myColor = styles.getPropertyValue('--my-color');
+  console.log(String(myColor).trim());
+
+  rootElement.style.setProperty('--my-color','rgb(243, 171, 183))')
+</script>
 </html>

@@ -1,7 +1,13 @@
 :root {
-  --my-color:pink;
+  --my-color:rgb(243, 171, 183);
 }
 .world{
   text-align: center;
   color: var(--my-color);
+  /* var() 支持第二个参数,代表一个默认值，如果第一个参数没有被声明，第二个值就会被引用 */
+  background-color: var(--color,#eee);
+}
+/* 动态改变自定义的属性值 */
+.mystyle{
+  --my-color:rgb(116, 108, 226);
 }
